@@ -1,0 +1,25 @@
+.detalleContenedor {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.detalleProducto {
+
+    display: block;
+}
+
+.nombreProducto {
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.descripcionProducto {
+    font-size: 1rem;
+}
+
+.imgDetail{ 
+    width: none;
+    height: 60vh;
+}

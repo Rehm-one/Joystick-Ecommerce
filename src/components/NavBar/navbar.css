@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+:root {
+    --nav-color: #333131;
+    --font-nav: 'Orbitron', sans-serif;
+    background-color: #ab1822;
+}
+
+
+.navbar {
+    display: flex;
+    justify-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    justify-items: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    padding: 2em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.categorias {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: var(--font-nav);
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    gap: 70px;
+   
+}
+
+li {
+    list-style: none;
+    gap: 5000px;
+    cursor: pointer;
+   
+}
+p{ 
+    color: #ffffffb1;
+    
+}
+
+.Carrito{ 
+    width: 150px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 75px;
+    font-family: var(--font-nav);
+    cursor: pointer;
+    margin-left: 50px;
+    color: #333131;
+}

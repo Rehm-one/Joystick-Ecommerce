@@ -1,0 +1,26 @@
+.imagenProducto {
+    height: 500px;
+}
+
+.CardContenedor {
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+
+}
+
+.imagenProducto:hover {
+    filter: drop-shadow(0 0 2em #2d37ee9d);
+    transform: scale(1.05);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.4s ease-in-out;
+}
+
+.imagenProducto.react:hover {
+    filter: drop-shadow(0 0 2em #33377daa);
+    transform: scale(1.05);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.4s ease-in-out;
+
+}
