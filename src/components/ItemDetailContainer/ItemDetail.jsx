@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../../context/CartContext'; // Asegúrate de tener este contexto para manejar el carrito
-import IconosPlataforma from './IconosPlataforma'; // Asegúrate de que esta ruta sea correcta
+import { CartContext } from '../../context/CartContext'; 
+import IconosPlataforma from './IconosPlataforma'; 
 import ItemCount from '../ItemCount/ItemCount'; 
-import './ItemDetail.css'// Asegúrate de que la ruta sea correcta
+import './ItemDetail.css'
 
 const ItemDetail = ({ producto}) => {
   const { agregarProducto } = useContext(CartContext);
 
   const handleAddToCart = (cantidad) => {
-    const productoConCantidad = { ...producto, cantidad }; // Combina el producto con la cantidad seleccionada
-    agregarProducto(productoConCantidad); // Usa la función del contexto para agregar el producto al carrito
+    const productoConCantidad = { ...producto, cantidad };
+    agregarProducto(productoConCantidad);
   };
 
   return (
@@ -26,7 +26,7 @@ const ItemDetail = ({ producto}) => {
           ))}
         </p>
         <p className="descripcionPrecio">Stock Disponible: {producto.stock}</p>
-        {/* Aquí integramos el componente ItemCount */}
+        
         <ItemCount stock={producto.stock} agregarAlCarrito={handleAddToCart} />
       </div>
     </div>
