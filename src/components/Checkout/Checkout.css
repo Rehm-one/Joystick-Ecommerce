@@ -1,0 +1,9 @@
+form {
+    display: inline-grid;
+    gap: 15px;
+    
+}
+
+.botonCompra{ 
+    margin: 50px ;
+}

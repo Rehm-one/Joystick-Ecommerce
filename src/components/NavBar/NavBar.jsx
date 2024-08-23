@@ -1,13 +1,12 @@
 import "./navbar.css";
 import CartWidget from "./CartWidget";
-
 import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
         <nav className="navbar">
-            <Link to="/" className="brand"> 
-            <img className="logo" src="../public/favicon.png" alt="" />
+            <Link to="/" className="brand">
+                <img className="logo" src="../public/favicon.png" alt="" />
             </Link>
 
             <ul className="categorias">
@@ -25,7 +24,7 @@ const NavBar = () => {
 
                 </Link>
             </ul>
-        
+
 
 
             <CartWidget />

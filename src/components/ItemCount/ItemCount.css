@@ -1,0 +1,26 @@
+.controls { 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.disminuir{
+    width: 50px;
+    height: 60px;
+
+}
+
+.aumentar{
+    width: 50px;
+    height: 60px;
+
+}
+.count {
+    font-size: 1.4rem;
+}
+
+.botonAgregar{ 
+    padding: 30px;
+    margin: 20px;
+}

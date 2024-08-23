@@ -68,7 +68,7 @@ p{
 .Carrito{ 
     width: 150px;
     font-size: 2rem;
-    display: flex;
+    display: ruby;
     justify-content: center;
     justify-items: center;
     margin-top: 75px;
