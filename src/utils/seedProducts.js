@@ -2,6 +2,9 @@ import { addDoc, collection } from "firebase/firestore";
 import db from '../db/db.js';
 
 
+import { addDoc, collection } from "firebase/firestore";
+import db from '../db/db.js';
+
 const productos = [
     {
       id: "Prod1",
@@ -10,8 +13,8 @@ const productos = [
       precio: 50,
       categoria: "terror",
       stock: 8,
-      imagen: "/public/images/product1.jpg",
-      plataformas: ["PC", "PS4",]
+      imagen: "/images/product1.jpg",
+      plataformas: ["PC", "PS4"]
     },
     {
       id: "Prod2",
@@ -20,7 +23,7 @@ const productos = [
       precio: 70,
       categoria: "terror",
       stock: 10,
-      imagen: "/public/images/product2.jpg",
+      imagen: "/images/product2.jpg",
       plataformas: ["PC", "PS4", "Xbox Series X/S"]
     },
     {
@@ -30,7 +33,7 @@ const productos = [
       precio: 30,
       categoria: "terror",
       stock: 5,
-      imagen: "/public/images/product3.jpg",
+      imagen: "/images/product3.jpg",
       plataformas: ["PC"]
     },
     {
@@ -40,7 +43,7 @@ const productos = [
       precio: 50,
       categoria: "terror",
       stock: 10,
-      imagen: "/public/images/product4.jpg",
+      imagen: "/images/product4.jpg",
       plataformas: ["PC"]
     },
     {
@@ -50,7 +53,7 @@ const productos = [
       precio: 55,
       categoria: "simuladores",
       stock: 15,
-      imagen: "/public/images/product5.jpg",
+      imagen: "/images/product5.jpg",
       plataformas: ["PC"]
     },
     {
@@ -60,7 +63,7 @@ const productos = [
       precio: 25,
       categoria: "simuladores",
       stock: 5,
-      imagen: "/public/images/product6.jpg",
+      imagen: "/images/product6.jpg",
       plataformas: ["PC"]
     },
     {
@@ -70,7 +73,7 @@ const productos = [
       precio: 40,
       categoria: "simuladores",
       stock: 15,
-      imagen:"/public/images/product7.jpg",
+      imagen: "/images/product7.jpg",
       plataformas: ["PC"]  
     },
     {
@@ -80,7 +83,7 @@ const productos = [
       precio: 58,
       categoria: "simuladores",
       stock: 20,
-      imagen:"/public/images/product8.jpg",
+      imagen: "/images/product8.jpg",
       plataformas: ["PC", "PS4", "Xbox One"]
     },
     {
@@ -90,7 +93,7 @@ const productos = [
       precio: 80,
       categoria: "shooter",
       stock: 20,
-      imagen: "/public/images/product9.jpg",
+      imagen: "/images/product9.jpg",
       plataformas: ["PC", "PS3", "Xbox One"]
     },
     {
@@ -100,7 +103,7 @@ const productos = [
       precio: 26,
       categoria: "shooter",
       stock: 4,
-      imagen: "/public/images/product10.jpg",
+      imagen: "/images/product10.jpg",
       plataformas:["PC", "PS4", "Xbox"]
     },
     {
@@ -110,20 +113,21 @@ const productos = [
       precio: 15,
       categoria: "shooter",
       stock: 5,
-      imagen: "/public/images/product11.jpg",
-      plataformas:["PC"],
+      imagen: "/images/product11.jpg",
+      plataformas:["PC"]
     },
     {
       id: "Prod12",
       nombre: "Counter Strike: Global Offensive 2",
-      descripcion: "Counter-Strike 2 es la última entrega en la icónica serie de juegos de disparos en primera persona Counter-Strike, desarrollada por Valve Corporation. El juego es una evolución del clásico Counter-Strike: Global Offensive , con mejoras en gráficos, mecánicas de juego y tecnología",
+      descripcion: "Counter-Strike 2 es la última entrega en la icónica serie de juegos de disparos en primera persona Counter-Strike, desarrollada por Valve Corporation. El juego es una evolución del clásico Counter-Strike: Global Offensive, con mejoras en gráficos, mecánicas de juego y tecnología.",
       precio: 35,
       categoria: "shooter",
       stock: 30,
-      imagen: "/public/images/product12.jpg",
+      imagen: "/images/product12.jpg",
       plataformas:["PC"]
     }
-  ];
+];
+
 
 
 const seedProductos  =  ()  =>{  
